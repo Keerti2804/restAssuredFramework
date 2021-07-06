@@ -10,8 +10,9 @@ public class Payloadconvertor {
 	{
 		
 		//i want is the file name
-		String filepath = "C:\\Users\\KeertiSarode\\eclipse-workspace\\Framework\\resource\\" + filename;
-		//String filepath =System.getProperty("uder.dir") + \\resource\\" + filename;
+		//String filepath = "C:\\Users\\KeertiSarode\\eclipse-workspace\\Framework\\resource\\" + filename;
+		String filepath =System.getProperty("user.dir")+"\\resource\\"+ filename;
+
 		return new String(Files.readAllBytes(Paths.get(filepath)));
 		
 	}
